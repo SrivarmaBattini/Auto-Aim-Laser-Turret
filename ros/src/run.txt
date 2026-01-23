@@ -1,0 +1,48 @@
+1. Create ROS2 workspace
+mkdir -p ~/ros/src
+cd ~/ros/src
+
+2. Create the package
+ros2 pkg create auto_turret --build-type ament_python --dependencies rclpy sensor_msgs geometry_msgs cv_bridge
+
+3. Go inside the package directory
+cd ~/ros/src/auto_turret/auto_turret
+
+4. Create the required node files
+nano camera_node.py
+nano detection_node.py
+nano tracking_node.py
+nano Angles.py
+nano turret_control_node.py
+nano web_stream_node.py
+
+5. Create launch folder
+mkdir ../launch
+cd ../launch
+touch auto_turret.launch.py
+
+
+6. How to run
+(i) Build the workspace:
+cd ~/ros
+colcon build --packages-select auto_turret
+source install/setup.bash
+
+(ii) Run all nodes in separate terminals if launch files aren't created:
+ros2 run auto_turret detection_node
+ros2 run auto_turret camera_node
+ros2 run auto_turret tracking_node
+ros2 run auto_turret turret_control_node
+ros2 run auto_turret web_stream_node
+
+[OR] If launch files created than:
+(i) After building launch file:
+cd ~/ros
+colcon build
+source install/setup.bash
+
+(ii) Run the launch file:
+ros2 launch auto_turret turret_launch.py
+
+If you update the launch file, rebuild or at least re-source:
+source install/setup.bash
