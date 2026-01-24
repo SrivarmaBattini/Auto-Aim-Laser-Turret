@@ -1,37 +1,31 @@
 # ROS Based Auto Aim Turret System
 
-## Overview
-This project implements a real time auto aim turret using ROS. The system processes live camera input to detect a target and automatically adjusts servo motors to track it. The goal of the project is to demonstrate real time software control, modular system design, and ROS based communication.
-
----
-
-## System Architecture
-The system is built using multiple ROS nodes. One node handles live video streaming from the camera. Another node processes the visual data and computes the required angles. A control node receives these angles and actuates the turret using servo motors. The nodes communicate using ROS publisher and subscriber mechanisms.
-
----
-
-## Key Engineering Concepts
-The project uses a modular ROS node architecture to separate concerns and improve maintainability. A real time control loop is implemented to ensure continuous tracking. Debugging and tuning were performed to maintain stable and responsive motion. The system demonstrates integration of perception and control in a distributed software setup.
+## About the Project
+This project implements a real-time auto aim turret system using ROS2. The system processes live camera input to detect a visual target and automatically adjusts a pan–tilt turret to keep a laser aligned with the target. The project focuses on real-time control, modular system design, and ROS-based communication running on embedded hardware.
 
 ---
 
 ## Technologies Used
 - Python  
-- ROS2  
+- ROS2 (Robot Operating System)  
 - OpenCV  
-- Servo Motor Control  
+- Raspberry Pi  
+- Servo Motor Control (PWM/GPIO)  
 
 ---
 
-## How to Run
-1. Start the ROS environment.
-2. Launch the camera streaming node.
-3. Run the angle computation node.
-4. Run the turret control node to begin tracking.
+## Image Processing Approach
+The system uses classical OpenCV-based image processing techniques for real-time target detection and tracking. This includes color space conversion, segmentation, contour detection, and coordinate extraction. No machine learning or deep learning models are used.
 
 ---
 
-## Learning Outcomes
-- Improved understanding of real time systems
-- Hands on experience with ROS communication
-- Stronger skills in debugging and systems integration
+## Hardware Used
+- Raspberry Pi  
+- USB Camera  
+- Pan–Tilt Mechanism  
+- Servo Motors  
+- Laser Module  
+- Breadboard  
+- Jumper Wires  
+
+---
