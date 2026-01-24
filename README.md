@@ -30,3 +30,10 @@ In this project, classical image processing techniques are used to detect and tr
 - Jumper Wires  
 
 ---
+
+## How to Run the Project
+1. Set up the ROS2 environment (source /opt/ros/humble/setup.bash)
+2. Create and build the workspace (colcon build)
+3. Source the workspace (source install/setup.bash)
+4. Connect the hardware
+5. Launch the system (ros2 launch auto_turret turret_launch.py)
