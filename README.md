@@ -1,4 +1,4 @@
-# ROS Based Auto Aim Turret System
+# Auto Aim Turret System using ROS2
 
 ## About This Project
 
