@@ -4,7 +4,7 @@
 
 This project implements a ROS2-based auto aim turret system that performs real-time target detection and tracking using computer vision. The system captures live video from a camera, processes each frame to detect a target, computes the required pan and tilt angles, and controls servo motors to keep a laser aligned with the target. The entire system runs on a Raspberry Pi and demonstrates real-time control, modular software design, and hardware integration using ROS2. The project is designed using multiple ROS2 nodes, each responsible for a specific task. These nodes communicate using ROS2 topics with a publisher–subscriber mechanism. Continuous data such as image frames, target coordinates, and control commands are exchanged through topics to support real-time tracking.
 
-For a detailed explanation of the vision, tracking, and control models used in this project, please refer to the **Model Description** document provided in this repository. 
+For a detailed explanation of the vision, tracking, and control models used in this project, please refer to the ***Model Description*** document provided in this repository. 
 
 ---
 
