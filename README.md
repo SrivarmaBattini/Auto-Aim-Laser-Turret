@@ -32,8 +32,4 @@ The hardware used in this project includes a Raspberry Pi as the main controller
 ---
 
 ## How to Run the Project
-1. Set up the ROS2 environment (source /opt/ros/humble/setup.bash)
-2. Create and build the workspace (colcon build)
-3. Source the workspace (source install/setup.bash)
-4. Connect the hardware
-5. Launch the system (ros2 launch auto_turret turret_launch.py)
+Refere run.txt file, where instructions mentioned clearly.
