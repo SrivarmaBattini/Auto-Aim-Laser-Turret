@@ -32,4 +32,4 @@ The hardware used in this project includes a Raspberry Pi as the main controller
 ---
 
 ## How to Run the Project
-Refere run.txt file, where instructions mentioned clearly.
+Refer run.txt file, where instructions mentioned clearly.
